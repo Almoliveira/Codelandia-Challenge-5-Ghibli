@@ -1,0 +1,49 @@
+.container{
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImage{
+    height: 20%;
+    width: 20%;
+}
+
+.mediaContainer{
+    margin: 0px 16px;
+    display: flex;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.mediaContainer>img:hover{
+    filter: invert(100%);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        max-width: 100%;
+    }
+    .logoImage{
+        height: 30%;
+        width: 30%;
+    }
+    .mediaContainer>img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .buttonSkewOutline{
+        display: none;
+    }
+    .mediaContainer{
+        gap: 6px;
+    }
+    .mediaContainer>img{
+        height: 48px;
+    }
+}

@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('./variaveis.css');
+
+body
+{
+
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(132deg, #628E75 0%, #1A4855 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(132deg, #628E75 0%, #1A4855 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(132deg, #628E75 0%, #1A4855 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A4855', endColorstr='#628E75', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(132deg, #628E75 0%, #1A4855 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(132deg, #628E75 0%, #1A4855 100%);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Correção no gradiente no mobile */
+@media screen and (max-width: 800px) {
+body{
+  height: 100%;
+  width: 100%;
+}
 }
